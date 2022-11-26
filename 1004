@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[]ad){
+        Scanner input = new Scanner(System.in);
+        int a,b,c;
+        a=input.nextInt();
+        b=input.nextInt();
+        c=a*b;
+        System.out.print("PROD = "+c+"\n");
+    }
+}
