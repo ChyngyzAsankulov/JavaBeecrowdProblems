@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[]ad){
+        Scanner input = new Scanner(System.in);
+        int A,B,SOMA;
+        A=input.nextInt();
+    
+        B=input.nextInt();
+        
+        SOMA= A+B;
+        System.out.print("SOMA = "+SOMA+"\n");
+    }
+}
