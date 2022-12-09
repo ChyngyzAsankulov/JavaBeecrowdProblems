@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner in = new Scanner(System.in);
+        double a,p,r,R;
+        R=in.nextDouble();
+        r=2.00;
+        p=3.14159;
+        for(int i=0;i<r;i++){
+            R*=R;
+        }
+        a=p*R;
+        System.out.print("A="+a+"\n");
+    }
+}
