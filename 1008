@@ -8,9 +8,10 @@ public class Main {
         int num=input.nextInt();
         int hours=input.nextInt();
         double salaryP=input.nextDouble();
+        
         double total=hours*salaryP;
         
-        System.out.print("NUMBER = "+ num);
+        System.out.print("NUMBER = "+num+"\n");
         System.out.printf("SALARY = U$ %.2f\n",total);
     }
 }
