@@ -1,0 +1,21 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+
+ public class Main {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int hour,min,sec;
+
+        hour = n/3600;
+        n = n - hour*3600;
+
+        min = n/60;
+        n = n - min*60;
+
+        sec = n/1;
+        System.out.print(hour+":"+min+":"+sec+"\n");
+    }
+}
