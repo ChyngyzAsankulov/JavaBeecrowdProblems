@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+
+ public class Main {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int years,months,days;
+
+        years = n/365;
+        n = n - years*365;
+
+        months = n/30;
+        n = n - months*30;
+
+        days = n/1;
+        System.out.print(years+" ano(s)\n");
+        System.out.print(months+" mes(es)\n");
+        System.out.print(days+" dia(s)\n");
+    }
+}
