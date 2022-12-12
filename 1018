@@ -1,0 +1,40 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+
+ public class Main {
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+                System.out.print(n+"\n");
+
+        int hundred = n/100;
+        n = n - hundred*100;
+        System.out.print(hundred + " nota(s) de R$ 100,00\n");
+
+        int fifty = n/50;
+        n = n - fifty*50;
+        System.out.print(fifty + " nota(s) de R$ 50,00\n");
+
+        int twenty = n/20;
+        n = n - twenty*20;
+        System.out.print(twenty + " nota(s) de R$ 20,00\n");
+
+        int ten = n/10;
+        n = n - ten*10;
+        System.out.print(ten + " nota(s) de R$ 10,00\n");
+
+        int five = n/5;
+        n = n - five*5;
+        System.out.print(five + " nota(s) de R$ 5,00\n");
+
+        int two = n/2;
+        n = n - two*2;
+        System.out.print(two + " nota(s) de R$ 2,00\n");
+
+        int one = n/1;
+        n = n - one;
+        System.out.print(one + " nota(s) de R$ 1,00\n");
+    }
+}
