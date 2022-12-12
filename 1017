@@ -1,0 +1,13 @@
+import java.io.IOException;
+ import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        double time = sc.nextInt();
+        double speedPerHour = sc.nextInt();
+        
+        double liters = time*(speedPerHour/12);
+        System.out.printf("%.3f\n",liters);
+    }
+}
